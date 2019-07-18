@@ -6,6 +6,11 @@ header {
   padding: 3% 17%;
   width: 100%;
   border-bottom: 2px dashed @navigation-border;
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .top-content {
@@ -19,7 +24,11 @@ header {
 
   img {
     padding-bottom: 2%;
-  } 
+  }
+  
+  @media @phone {
+    width: 90%;
+  }
 }
 
 .home {
@@ -30,16 +39,28 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @phone {
+     flex-direction: column;
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 90%;
+        margin: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 90%;
+        margin: auto;
+      }
 
       img {
         border-radius: 10px;
@@ -51,6 +72,9 @@ header {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -66,6 +90,10 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 90%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -77,12 +105,26 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
       .btn {
       .custom-button();
+
+      @media @phone {
+        height: 40px;
+      }
+      }
+
+      @media @phone {
+        width: 75%;
+        margin: auto;
       }
     }
   }
