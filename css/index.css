@@ -258,3 +258,20 @@ header {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  margin: 0px;
+  width: 80%;
+  height: 18%;
+  font-size: 2rem;
+  border-radius: 12px;
+  color: #FFFFFF;
+  margin-bottom: 7%;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
+}
