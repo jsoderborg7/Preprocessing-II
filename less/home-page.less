@@ -11,6 +11,10 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .top-content {
@@ -29,6 +33,10 @@ header {
   @media @phone {
     width: 90%;
   }
+
+  @media @tablet {
+    width: 90%;
+  }
 }
 
 .home {
@@ -41,6 +49,11 @@ header {
 
    @media @phone {
      flex-direction: column;
+   }
+
+   @media @tablet {
+     width: 90%;
+     margin: 3% auto;
    }
     
     .text-content {
@@ -94,6 +107,12 @@ header {
       width: 90%;
     }
 
+    
+    @media @tablet {
+      width: 90%;
+      margin: auto;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -110,6 +129,11 @@ header {
       align-items: center;
     }
 
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
@@ -120,10 +144,20 @@ header {
       @media @phone {
         height: 40px;
       }
+
+      @media @tablet {
+        height: 40px;
+        width: 40%;
+      }
       }
 
       @media @phone {
         width: 75%;
+        margin: auto;
+      }
+
+      @media @tablet {
+        width: 90%;
         margin: auto;
       }
     }
