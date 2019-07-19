@@ -1,1 +1,19 @@
 // Mixins in here
+.custom-button(@bg-color:#17A2B8, @width:80%, @font:#FFFFFF){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bg-color;
+  margin: 0px;
+  width: @width;
+  height: 18%;
+  font-size: 2rem;
+  border-radius: 12px;
+  color:@font;
+  margin-bottom: 7%;
+
+   &:hover{
+    background-color:@font;
+    color:@bg-color; 
+  }
+}
